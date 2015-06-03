@@ -18,7 +18,7 @@
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
 d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
 _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="//v2.zopim.com/?341gA2Iy9nXmpsxZolDGalCOknJ6m7oN";z.t=+new Date;$.
+$.src="http://v2.zopim.com/?341gA2Iy9nXmpsxZolDGalCOknJ6m7oN";z.t=+new Date;$.
 type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
@@ -83,29 +83,42 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--end Icon Blocks-->
 <!--articles-->
 <div class="container">
-    <div class="row articles">
-        <div class="col-md-3 col-sm-6">
+    <div class="row articles produtos">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/haagen_dazs_e_brownie_do_luiz.jpg" alt="img">
+            <p class="descricao">
+                1 Brownie do Luiz <br/>
+                + 1 Haagen Dazs <br/>
+                <a href="#" class="button">Vai encarar a dupla?</a>
+            </p>
             <div class="text">
-                <span>
+                <span class="nomeProd">
                 Dupla de dois</span>
                 <p>
                      R$ 55,00
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/ferreiro_rocher.jpg" alt="img">
+            <p class="descricao">
+                Caixa de Ferreiro Rocher com 15 unidades <br/>
+                <a href="#" class="button">Peça a sua caixa!</a>
+            </p>
             <div class="text">
                 <span>
-                Desejo mais 1(hummm) </span>
+                Desejo +1(hummm) </span>
                 <p>
                      R$ 45,00
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/bomba_de_chocolate.jpg" alt="img">
+            <p class="descricao">
+                Bomba de Chocolate <br/>
+                <a href="#" class="button">Quer uma dessas?</a>
+            </p>
             <div class="text">
                 <span>
                 Bomba 100-Culpa </span>
@@ -114,8 +127,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/top10brasil.jpg" alt="img">
+             <p class="descricao">
+                10 Barrinhas dos chocolates mais vendidos no Brasil<br/>
+                <a href="#" class="button">Um pouco de cada?</a>
+            </p>
             <div class="text">
                 <span>
                 Top 10 Brasil </span>
@@ -156,9 +173,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--end-partners box -->
 <!--articles-->
 <div class="container">
-    <div class="row articles">
-        <div class="col-md-3 col-sm-6">
+    <div class="row articles produtos">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/lindt.jpg" alt="img">
+            <p class="descricao">
+                10 Barrinhas dos chocolates mais vendidos no Brasil<br/>
+                <a href="#" class="button">Peça o seu!</a>
+            </p>
             <div class="text">
                 <span>
                 Fã Nº1</span>
@@ -167,8 +188,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/lindt.jpg" alt="img">
+            <p class="descricao">
+                10 Barrinhas dos chocolates mais vendidos no Brasil<br/>
+                <a href="#" class="button">Um pouco de cada?</a>
+            </p>
             <div class="text">
                 <span>
                 70 com Vontade </span>
@@ -177,8 +202,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/veneno_da_lata.jpg" alt="img">
+            <p class="descricao">
+                10 Barrinhas dos chocolates mais vendidos no Brasil<br/>
+                <a href="#" class="button">Peça o seu!</a>
+            </p>
             <div class="text">
                 <span>
                 Veneno 1989 </span>
@@ -187,8 +216,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 produto">
             <img src="images/products/veneno_da_lata.jpg" alt="img">
+            <p class="descricao">
+                10 Barrinhas dos chocolates mais vendidos no Brasil<br/>
+                <a href="#" class="button">Peça o seu!</a>
+            </p>
             <div class="text">
                 <span>
                 50 Tons de Chocolate </span>
@@ -285,6 +318,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
             $('html, body').animate({
                 scrollTop: $("#mainH1").offset().top
             }, 2000);
+        });
+
+        $('.produto .button').click(function(e){
+            $zopim.livechat.say('Olá, gostaria de fazer um pedido! Quero um: ' + $(this).closest('.produto').find('.nomeProd').text().trim());
+            e.preventDefault();
+            return false;
         });
     });
 })(jQuery);

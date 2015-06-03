@@ -519,7 +519,7 @@ a {
 }
 .main-flexslider .slides .slides .slide-caption a {
   color:#fff;
-  background:rgb(52, 116, 255);
+  background:rgb(80, 131, 242);
   font-size:14px;
   font-family:Open sans;
   font-weight:bold;
@@ -532,7 +532,7 @@ a {
 }
 .main-flexslider .slides .slides .slide-caption a:hover {
   background:#fff;
-  color:rgb(52, 116, 255);
+  color:rgb(80, 131, 242);
   text-decoration:none;
 }
 .main-flexslider .slides .slides .slide-caption h2,
@@ -2530,4 +2530,56 @@ i:hover {
   padding: 45px;
   border-top: 1px solid #eee;
   color:#382925;
+}
+.produtos>div{
+  position: relative;
+}
+.produto .descricao{
+    position: absolute;
+    /*margin: 0px 15px 30px 15px;*/
+    top: 0px;
+    padding-top: 15px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+/*    height: 100%; */    
+    /*color: rgba(255, 255, 255, 0.0);*/
+    background: rgba(255, 255, 255, 0.75);
+    padding: 45px 0;
+    transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    opacity: 0;
+    font-size: 17px;
+    line-height: 25px;
+}
+.produto:hover>.descricao{
+    opacity: 1;
+    color:#382925;
+}
+
+.produto>.text{
+  margin-top: -3px;
+}
+.produto .button {
+  color: #fff;
+  background: rgba(80, 131, 242,0.75);
+  font-size: 14px;
+  font-family: Open sans;
+  font-weight: bold;
+  padding: 15px 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 22px;
+  min-width: 210px;
+  margin-left: -105px;
+  line-height: 14px;
+}
+.produto .button:hover {
+  color:#fff;
+  background: rgba(80, 131, 242,1);
 }
