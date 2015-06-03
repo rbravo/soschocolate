@@ -1,11 +1,11 @@
 @media (max-width:1300px) {
 	.main-flexslider .slides .slides .slide-caption h2 {
-					font-size:30px;
+					font-size:36px;
 	}
 }
 @media (max-width:1199px) {
 	.main-flexslider .slides .slides .slide-caption h2 {
-					font-size:26px;
+					font-size:28px;
 	}
 	.taxes,.eight.columns.cart-totals {
 			width:100%!important
@@ -61,11 +61,11 @@
 			width:100%;
 	}
 	.full-footer h4 {
-				margin-top:30px;
+		margin-top:30px;
 	}
 }
 .main-flexslider .slides .slides .slide-caption a {
-	font-size:10px;
+	font-size:13px;
 	line-height:86px;
 }
 }
