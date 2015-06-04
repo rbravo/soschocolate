@@ -2554,6 +2554,7 @@ i:hover {
     opacity: 0;
     font-size: 17px;
     line-height: 25px;
+    text-transform: none;
 }
 .produto:hover>.descricao{
     opacity: 1;
